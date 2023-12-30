@@ -7,6 +7,4 @@ RUN apk update && \
 	mv nvim_config /root/.config/nvim && \
 	nvim --headless "+Lazy! sync" +qa
 
-COPY startup.sh /tmp/startup.sh
-
-CMD [ "sh", "/tmp/startup.sh" ]
+CMD [ "sleep", "infinity" ]
